@@ -1,0 +1,10 @@
+CIDADES:
+
+- Bangkok - Tailândia
+- Cidade de Tóquio - Tóquio
+- Cidade de Hong Kong - Hong Kong
+- Dubai - Emirados Árabes Unidos
+- Delhi - Nova Delhi
+- Singapura - Malásia
+- Teerão - Irã
+- Kathmandu - Nepal

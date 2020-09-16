@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    background-color: black;
+    opacity: 81%;
+    position: fixed;
+    z-index: 1000;
+    width: 210.3vh;
+    height: 20vh;
+}
+header nav .logo{
+    z-index: 1000;
+    width: 50vh;
+    height: 30vh;
+    transform: translateX(20%) translateY(-15%);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    font: bold 15pt Segoe UI;
+    color: rgb(255, 255, 255);
+}
+header nav ul li a{
+    display: flex;
+    text-decoration: none;
+    margin-right: -50px;
+    margin-left: 100px;
+    transform: translateX(0%) translateY(250%);
+    font: bold 12pt Segoe UI;
+    color: rgb(255, 255, 255);
+    transition: ease 0.5s;
+}
+header nav ul li a:hover{
+    color: rgb(200,200,200);
+    transform: translateX(0%) translateY(240%);   
+}
+header section{
+    margin: 0;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    height: 3000vh;
+}
+.md_one, .md_tree, .md_five, .md_seven, .md_nine, .md_eleven, .md_thirteen, .md_fifteen, .md_seventeen, .md_nineteen, .md_twenty_one, .md_twenty_tree, .md_twenty_five{
+    position: relative;
+    transform: translateX(40%) translateY(29%);
+    width: 500px;
+    height: 500px;
+    background: #262626;
+    overflow: hidden;
+    box-shadow: 2px 4px 6px 2px rgb(0, 0, 0);
+}
+.md_two, .md_four, .md_six, .md_eigth, .md_ten, .md_tweelve, .md_fourteen, .md_sixteen, .md_eigthteen, .md_twenty, .md_twenty_two, .md_twenty_four{
+    position: relative;
+    transform: translateX(120%) translateY(69%);
+    width: 500px;
+    height: 500px;
+    margin-bottom: 400px;
+    background: #262626;
+    overflow: hidden;
+    box-shadow: 2px 4px 6px 2px rgb(0, 0, 0);
+}
+input, .toggle{
+    position: absolute;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+    outline: none;
+    z-index: 10;
+}
+input{
+    opacity: 0;
+}
+.toggle{
+    pointer-events: none;
+    border-radius: 50%;
+    background: #FF0B0B;
+    color: #fff;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 45px;
+    font-size: 33px;
+    box-shadow: 0 0 0 0px #ffffff;
+}
+input:checked ~ .toggle{
+    box-shadow: 0 0 0 700px #ffffff;
+    transform: rotate(225deg);
+    text-align: center;
+}
+.img_one img, .img_two img, .img_tree img, .img_four img, .img_five img, .img_six img, .img_seven img, .img_eigth img, .img_nine img, .img_ten img, .img_eleven img, .img_tweelve img, .img_thirteen img, .img_fourteen img, .img_fifteen img, .img_sixteen img, .img_seventeen img, .img_eigthteen img, .img_nineteen img, .img_twenty img, .img_twenty_one img, .img_twenty_two img, .img_twenty_tree img, .img_twenty_four img, .img_twenty_five img{
+    width: 500px;
+    height: 500px;
+}
+.content_one, .content_two, .content_tree, .content_four, .content_five, .content_six, .content_seven, .content_eigth, .content_nine, .content_ten, .content_eleven, .content_tweelve, .content_thirteen, .content_fourteen, .content_fifteen, .content_sixteen, .content_seventeen, .content_eigthteen, .content_nineteen, .content_twenty, .content_twenty_one, .content_twenty_two, .content_twenty_tree, .content_twenty_four, .content_twenty_five{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+input:checked ~ .content_one, input:checked ~ .content_two, input:checked ~ .content_tree, input:checked ~ .content_four, input:checked ~ .content_five, input:checked ~ .content_six, input:checked ~ .content_seven, input:checked ~ .content_eigth, input:checked ~ .content_nine, input:checked ~ .content_ten, input:checked ~ .content_eleven, input:checked ~ .content_tweelve, input:checked ~ .content_thirteen, input:checked ~ .content_fourteen, input:checked ~ .content_fifteen, input:checked ~ .content_sixteen, input:checked ~ .content_seventeen, input:checked ~ .content_eigthteen, input:checked ~ .content_nineteen, input:checked ~ .content_twenty, input:checked ~ .content_twenty_one, input:checked ~ .content_twenty_two, input:checked ~ .content_twenty_tree, input:checked ~ .content_twenty_four, input:checked ~ .content_twenty_five{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.content_one h2, .content_two h2, .content_tree h2, .content_four h2, .content_five h2, .content_six h2, .content_seven h2, .content_eigth h2, .content_nine h2, .content_ten h2, .content_eleven h2, .content_tweelve h2, .content_thirteen h2, .content_fourteen h2, .content_fifteen h2, .content_sixteen h2, .content_seventeen h2 , .content_eigthteen h2, .content_nineteen h2, .content_twenty h2, .content_twenty_one h2, .content_twenty_two h2, .content_twenty_tree h2, .content_twenty_four h2, .content_twenty_five h2{
+    text-align: center;
+    margin-bottom: 5px;
+    color: #000000;
+    font: bold 16pt Segoe UI;
+}
+.content_one p, .content_two p, .content_tree p, .content_four p, .content_five p, .content_six p, .content_seven p, .content_eigth p, .content_nine p, .content_ten p, .content_eleven p, .content_tweelve p, .content_thirteen p, .content_fourteen p, .content_fifteen p, .content_sixteen p, .content_seventeen p, .content_eigthteen p, .content_nineteen p, .content_twenty p, .content_twenty_one p, .content_twenty_two p, .content_twenty_tree p, .content_twenty_four p,.content_twenty_five p{
+    margin:0;
+    padding: 0;
+    font: normal 12.5pt Segoe UI;
+    color: rgb(0, 0, 0);
+}
